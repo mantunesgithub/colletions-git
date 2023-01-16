@@ -1,19 +1,9 @@
 package br.com.alura
 
 fun main() {
-    testaComportamentoMap()
-//  testaMap(pedidos)
+    testaComportamentoMap()         //marcio-git
+//  testaMap(pedidos)               //ana-git
 }
-
-val pedidos: MutableMap<Int, Double> = mutableMapOf(
-    Pair(1, 20.00),
-    Pair(2, 64.00),
-    3 to 50.0,
-    4 to 100.00,
-    5 to 150.00,
-    6 to 80.0
-)
-
 val produtos: MutableMap<Int, String> = mutableMapOf(
     Pair(1, "Abacate"),
     Pair(2, "Abacaxi"),
@@ -29,18 +19,23 @@ fun comProdutos() {
     produtos.put(4, "Coco")
     println("Produtos $produtos")
 }
-
-
+val pedidos: MutableMap<Int, Double> = mutableMapOf(
+    Pair(1, 20.00),
+    Pair(2, 64.00),
+    3 to 50.0,
+    4 to 100.00,
+    5 to 150.00,
+    6 to 80.0,
+    Pair(7, 200.00)
+)
 fun testaComportamentoMap() {
 
-//    val vlPedidos = pedidos.getValue(10)       //se nap acha chave ele para
+//    val vlPedidos = pedidos.getValue(10)       //com getValue se map não acha chave ele para
 //    println(vlPedidos)
     println(pedidos.getOrElse(10) {
         "Nao tem chave"
     })
-
-    println("padrão -1 se não acha ${pedidos.getOrDefault(1,-1.0)}")
-
+    println("padrão -1 se não acha ${pedidos.getOrDefault(41,-1.0)}")
     for (numero in pedidos.keys) {
         println("Pedido $numero")
     }
@@ -67,8 +62,8 @@ fun testaComportamentoMap() {
     println("Filtrados pares $pedidosFiltrados")
 
     println("Pedidos original $pedidos")
-    println("Mapa + adicao ${pedidos + Pair(7, 90.0)}")
-    println("Mapa + adicao ${pedidos + mapOf(8 to 20.0, 9 to 100)}")
+    println("Mapa + adicao ${pedidos + Pair(9, 90.0)}")
+    println("Mapa + adicao ${pedidos + mapOf(10 to 20.0, 11 to 100)}")
 
     println(pedidos - 6)
     println(pedidos - listOf(1, 3))
