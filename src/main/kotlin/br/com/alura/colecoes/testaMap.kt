@@ -92,8 +92,8 @@ fun testaComportamentoMap() {
 }
 
 fun testaMap() {
-    println("PEDIDOS :=> $pedidos")
-
+    println("Lista de pedidos :=> $pedidos")
+    println("-------------------")
 //    println("Pedido " + pedidos[1])
     val pedido: Double? = pedidos[9]
     pedido?.let {
