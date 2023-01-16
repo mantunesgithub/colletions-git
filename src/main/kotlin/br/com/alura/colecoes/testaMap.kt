@@ -4,10 +4,13 @@ fun main() {
     testaComportamentoMap()         //marcio-git
 //  testaMap(pedidos)               //ana-git
 }
+
 val produtos: MutableMap<Int, String> = mutableMapOf(
     Pair(1, "Abacate"),
     Pair(2, "Abacaxi"),
-    Pair(3, "Banana")
+    Pair(3, "Banana"),
+    (4 to "Goiaba"),
+    (5 to "Melão")
 )
 
 fun comProdutos() {
