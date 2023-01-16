@@ -27,7 +27,7 @@ val pedidos: MutableMap<Int, Double> = mutableMapOf(
     5 to 150.00,
     6 to 80.0,
     Pair(7, 200.00),
-    Pair(100, 1000.00),
+    Pair(100, 1100.00)
 )
 fun testaComportamentoMap() {
 
