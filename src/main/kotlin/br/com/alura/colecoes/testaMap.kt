@@ -115,5 +115,7 @@ fun testaMap() {
     println("Removeu key 6 $pedidos")
     pedidos.remove(5, 76.0)
     println(pedidos)
+    pedidos.remove(7)
+    println("Removeu key 7 $pedidos")
 }
 
