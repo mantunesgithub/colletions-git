@@ -11,7 +11,7 @@ public fun main() {
     assistiramAmbos.addAll(assistiramCursoAndroid)
     println("Ambos-Android: $assistiramAmbos")
     assistiramAmbos.addAll(assistiramCursoKotlin)
-    assistiramAmbos.add("Ana")
+    assistiramAmbos.add("Ana e Marcio git")
     println("Ambos-Android+kotlin+ana: $assistiramAmbos")
 
 // Ou Podemos fazer Assim
