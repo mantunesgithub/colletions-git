@@ -13,7 +13,7 @@ public fun main() {
     assistiramAmbos.addAll(assistiramCursoKotlin)
     assistiramAmbos.add("Ricardo")
     println("Ambos sincronizados: $assistiramAmbos")
- 
+
 // Ou Podemos fazer Assim
 //      println("Ambos: " + (assistiramCursoAndroid + assistiramCursoKotlin))
 // Ou Podemos fazer Assim
