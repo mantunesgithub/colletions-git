@@ -10,8 +10,7 @@ val produtos: MutableMap<Int, String> = mutableMapOf(
     Pair(2, "Abacaxi"),
     Pair(3, "Banana"),
     (4 to "Goiaba"),
-    (5 to "Melão"),
-    (6 to "Uva")
+    (5 to "Melão")
 )
 
 fun comProdutos() {
