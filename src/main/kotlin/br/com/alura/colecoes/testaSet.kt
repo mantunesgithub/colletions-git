@@ -12,8 +12,8 @@ public fun main() {
     println("Ambos-Android: $assistiramAmbos")
     assistiramAmbos.addAll(assistiramCursoKotlin)
     assistiramAmbos.add("Ricardo")
-    println("Ambos-Android+kotlin+ana: $assistiramAmbos")
-
+    println("Ambos sincronizados: $assistiramAmbos")
+ 
 // Ou Podemos fazer Assim
 //      println("Ambos: " + (assistiramCursoAndroid + assistiramCursoKotlin))
 // Ou Podemos fazer Assim
