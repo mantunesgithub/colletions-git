@@ -1,8 +1,10 @@
 package br.com.alura
 
 fun main() {
-    testaComportamentoMap()         //marcio-git
-//  testaMap(pedidos)               //ana-git
+
+//    testaComportamentoMap()
+  testaMap()
+
 }
 
 val produtos: MutableMap<Int, String> = mutableMapOf(
@@ -97,12 +99,12 @@ fun testaMap() {
     pedido?.let {
         println("$it")
     }
-    for (p: Map.Entry<Int, Double> in pedidos) {
-        println("Nro   ped.: ${p.key}")
-        println("Valor ped.: ${p.value}")
+    for (p in pedidos) {
+        println("Numero ped.: ${p.key}")
+        println("Valor  ped.: ${p.value}")
     }
     pedidos[5] = 76.0
-    println(pedidos)
+    println("incluiu key 5 $pedidos")
     pedidos.put(6, 96.0)
     println(pedidos)
     pedidos[6] = 100.0
@@ -110,7 +112,7 @@ fun testaMap() {
     pedidos.putIfAbsent(7, 196.0)
 
     pedidos.remove(6)
-    println(pedidos)
+    println("Removeu key 6 $pedidos")
     pedidos.remove(5, 76.0)
     println(pedidos)
 }
