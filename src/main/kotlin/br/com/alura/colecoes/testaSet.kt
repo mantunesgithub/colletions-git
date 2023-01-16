@@ -2,16 +2,16 @@ package br.com.alura
 
 public fun main() {
     //    SET o elemento não se repete (Pode ser String, Int, Object)
-    val assistiramCursoAndroid: Set<String> = setOf("Marcio", "Ivan", "Maria", "Claudio")
+    val assistiramCursoAndroid: Set<String> = setOf("Marcio", "Ivan", "Maria", "Claudio, Pedro")
     println("Android => $assistiramCursoAndroid")
-    val assistiramCursoKotlin = listOf("Marcio", "João", "Maria", "José")
+    val assistiramCursoKotlin = listOf("Marcio", "João", "Maria", "José", "Bob")
     println("Kotlin => $assistiramCursoKotlin")
     var assistiramAmbos = mutableSetOf<String>()
 //Podemos fazer Assim
     assistiramAmbos.addAll(assistiramCursoAndroid)
     println("Ambos-Android: $assistiramAmbos")
     assistiramAmbos.addAll(assistiramCursoKotlin)
-    assistiramAmbos.add("Ana e Marcio git")
+    assistiramAmbos.add("Ricardo")
     println("Ambos-Android+kotlin+ana: $assistiramAmbos")
 
 // Ou Podemos fazer Assim
