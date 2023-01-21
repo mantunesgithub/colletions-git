@@ -12,8 +12,13 @@ public fun main() {
     println("Ambos-Android: $assistiramAmbos")
     assistiramAmbos.addAll(assistiramCursoKotlin)
     assistiramAmbos.add("Ricardo")
-    println("Ambos sincronizados: $assistiramAmbos")
-
+    println("Todos      = $assistiramAmbos")
+    println("Todos com M:")
+    assistiramAmbos.forEach {
+        if (it.startsWith("M")) println(it)
+    }
+    assistiramAmbos.removeIf {it.startsWith("M")}
+    println("Todos sem M= $assistiramAmbos")
 // Ou Podemos fazer Assim
 //      println("Ambos: " + (assistiramCursoAndroid + assistiramCursoKotlin))
 // Ou Podemos fazer Assim

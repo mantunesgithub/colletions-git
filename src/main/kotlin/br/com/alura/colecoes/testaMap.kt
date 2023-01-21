@@ -25,7 +25,10 @@ fun comProdutos() {
         println("${prod.key} - ${prod.value} ")
     }
     produtos.put(4, "Coco")
+    val produtosComLegumes = produtos + mapOf(100 to "Alface", 110 to "Tomate")
     println("Produtos $produtos")
+    println("Produtos com legumes $produtosComLegumes")
+    
 }
 val pedidos: MutableMap<Int, Double> = mutableMapOf(
     Pair(1, 20.00),
