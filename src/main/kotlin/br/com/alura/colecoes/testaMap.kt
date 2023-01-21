@@ -3,7 +3,8 @@ package br.com.alura
 fun main() {
 
 //    testaComportamentoMap()
-  testaMap()
+//  testaMap()
+    comProdutos()
 
 }
 
@@ -12,7 +13,9 @@ val produtos: MutableMap<Int, String> = mutableMapOf(
     Pair(2, "Abacaxi"),
     Pair(3, "Banana"),
     (4 to "Goiaba"),
-    (5 to "Melão Maduro")
+    (5 to "Melão Maduro"),
+    (6 to "Pera nova"),
+    (7 to "Limão novo")
 )
 
 fun comProdutos() {
